@@ -19,18 +19,24 @@ const NavBar = () => {
 
         <div className='collapse navbar-collapse'>
           <ul className='navbar-nav mr-auto'>
-            <li class='nav-item active'>
-              <a class='nav-link' href='!#'>
-                Home <span class='sr-only'>(current)</span>
+            <li className='nav-item active'>
+              <a className='nav-link' href='!#'>
+                Home <span className='sr-only'>(current)</span>
               </a>
             </li>
 
-            <li class='nav-item'>
-              <a class='nav-link' href='!#'>
+            <li className='nav-item active'>
+              <a className='nav-link' href='!#'>
                 Link
               </a>
             </li>
           </ul>
+        </div>
+
+        <div className='my-2 my-lg-0'>
+          <button class='btn btn-outline-success my-2 my-sm-0' type='submit'>
+            Search
+          </button>
         </div>
       </nav>
     </React.Fragment>
