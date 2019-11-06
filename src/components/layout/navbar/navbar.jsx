@@ -9,9 +9,9 @@ const NavBar = () => {
         <Link className='navbar-brand'>
           <img
             className='d-inline-block align-top'
-            src='https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg'
+            src='http://hcc06.weebly.com/uploads/2/2/1/0/22104500/5507799_orig.jpg'
             width='30'
-            height='30'
+            height='35'
             alt=''
           />{' '}
           Holy Cross
@@ -34,7 +34,7 @@ const NavBar = () => {
         </div>
 
         <div className='my-2 my-lg-0'>
-          <button class='btn btn-outline-success my-2 my-sm-0' type='submit'>
+          <button class='btn btn-outline-primary my-2 my-sm-0' type='submit'>
             Search
           </button>
         </div>
