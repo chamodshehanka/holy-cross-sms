@@ -1,0 +1,10 @@
+.container {
+    padding-top: 25%;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}

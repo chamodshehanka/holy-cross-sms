@@ -6,8 +6,8 @@ import LandingPage from '../pages/landing-page';
 const ROUTING = (
   <Router>
     <div>
-      <Route path='/' component={App} />
-      <Route path='/landing' component={LandingPage} />
+      <Route exact path='/' component={LandingPage} />
+      <Route path='/landing' component={App} />
     </div>
   </Router>
 );
