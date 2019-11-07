@@ -33,7 +33,6 @@ public class LoginScreenController implements Initializable {
 
     @FXML
     private void loginAction() {
-        System.out.println("Clicked");
         try {
             AnchorPane principalDashboardPane = FXMLLoader.load(getClass().getResource(
                     "/com/rabbit/hollycross/view/fxml/PrincipalDashboard.fxml"

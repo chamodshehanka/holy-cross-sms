@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="rootPricipalDashboard" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="250.0">
+      <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
          <children>
             <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="92.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -41,7 +41,7 @@
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="414.0" onAction="#viewExams" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #ee5253;" text="LOG OUT" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="414.0" onAction="#logOut" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #ee5253;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
