@@ -18,6 +18,9 @@ import java.util.ResourceBundle;
 public class LoginScreenController implements Initializable {
 
     @FXML
+    private AnchorPane rootLogin;
+
+    @FXML
     private JFXTextField txtUserName;
 
     @FXML
@@ -30,11 +33,13 @@ public class LoginScreenController implements Initializable {
 
     @FXML
     private void loginAction() {
+        System.out.println("Clicked");
         try {
             AnchorPane principalDashboardPane = FXMLLoader.load(getClass().getResource(
                     "/com/rabbit/hollycross/view/fxml/PrincipalDashboard.fxml"
             ));
 
+            rootLogin.getChildren().setAll(principalDashboardPane);
         } catch (IOException e) {
             e.printStackTrace();
         }
