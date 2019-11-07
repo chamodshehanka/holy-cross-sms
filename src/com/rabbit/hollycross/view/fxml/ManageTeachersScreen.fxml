@@ -5,7 +5,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageTeachersScreenController">
+<AnchorPane fx:id="rootManageTeachers" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageTeachersScreenController">
    <children>
       <Text fill="WHITE" layoutX="187.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Teachers">
          <font>

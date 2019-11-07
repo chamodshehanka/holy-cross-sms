@@ -66,7 +66,13 @@ public class PrincipalDashboardController implements Initializable {
 
     @FXML
     private void viewHome() {
-
+        try {
+            AnchorPane homePane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/PrincipalDashboard.fxml"));
+            rootPricipalDashboard.getChildren().setAll(homePane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
@@ -76,7 +82,13 @@ public class PrincipalDashboardController implements Initializable {
 
     @FXML
     private void viewTeachers() {
-
+        try {
+            AnchorPane teachersPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageTeachersScreen.fxml"));
+            rootPane.getChildren().setAll(teachersPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
