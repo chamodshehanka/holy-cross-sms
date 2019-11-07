@@ -21,6 +21,16 @@
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="170.0" onAction="#viewTeachers" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE TEACHERS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="223.0" onAction="#viewStudents" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="rootPane" layoutX="250.0" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" />
