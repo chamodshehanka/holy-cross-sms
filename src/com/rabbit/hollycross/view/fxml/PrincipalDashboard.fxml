@@ -16,17 +16,32 @@
                   <Image url="@../images/logo.jpg" />
                </image>
             </ImageView>
-            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="115.0" onAction="#viewHome" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="HOME" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="141.0" onAction="#viewHome" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="HOME" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="170.0" onAction="#viewTeachers" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE TEACHERS" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="196.0" onAction="#viewTeachers" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE TEACHERS" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="223.0" onAction="#viewStudents" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE STUDENTS" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="250.0" onAction="#viewStudents" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE STUDENTS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="304.0" onAction="#viewBuildings" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE BUILDINGS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="359.0" onAction="#viewExams" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE EXAMS" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="414.0" onAction="#viewExams" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #ee5253;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>
