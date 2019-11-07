@@ -1,6 +1,8 @@
 package com.rabbit.hollycross.view.controller;
 
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -10,8 +12,21 @@ import java.util.ResourceBundle;
  * @project StudentManagementSystem
  **/
 public class PrincipalDashboardController implements Initializable {
+
+    @FXML
+    private AnchorPane rootPricipalDashboard;
+
+    @FXML
+    private AnchorPane rootPane;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
+    @FXML
+    private void viewHome() {
+
+    }
+
 }

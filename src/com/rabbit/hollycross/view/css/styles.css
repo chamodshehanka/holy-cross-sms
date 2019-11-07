@@ -2,6 +2,10 @@
     -fx-background-color: #833471;
 }
 
+.dark-background {
+    -fx-background-color: #833471;
+}
+
 .btn-secondary{
     -fx-background-color: #ffffff;
     -fx-text-fill: #833471;

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController"
-            prefHeight="600.0" prefWidth="800.0">
 
+<AnchorPane fx:id="rootPricipalDashboard" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="250.0">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="92.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="115.0" onAction="#viewHome" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="HOME" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootPane" layoutX="250.0" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" />
+   </children>
 </AnchorPane>
