@@ -1,0 +1,18 @@
+.btn-primary{
+    -fx-background-color: #833471;
+}
+
+.btn-secondary{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #833471;
+    -fx-min-width: 90px;
+    -fx-font-family: Calibri;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-text-fill: #ffffff;
+    -fx-focus-color: #833471;
+    -fx-prompt-text-fill: #ffffff;
+}
