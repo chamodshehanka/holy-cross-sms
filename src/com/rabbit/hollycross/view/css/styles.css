@@ -6,6 +6,11 @@
     -fx-background-color: #833471;
 }
 
+.dashboard-item {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 20;
+}
+
 .btn-secondary{
     -fx-background-color: #ffffff;
     -fx-text-fill: #833471;
