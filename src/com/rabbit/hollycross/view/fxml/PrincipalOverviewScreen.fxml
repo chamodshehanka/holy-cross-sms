@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rabbit.hollycross.view.controller.PrincipalOverviewScreenController"
-            prefHeight="600.0" prefWidth="550.0">
 
+<AnchorPane prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalOverviewScreenController">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css">
+         <children>
+            <Text fill="WHITE" layoutX="212.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="36.0" layoutY="116.0" prefHeight="100.0" prefWidth="100.0" styleClass="dashboard-item">
+               <children>
+                  <Text layoutX="23.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblTeachers" layoutX="41.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="163.0" layoutY="116.0" prefHeight="100.0" prefWidth="100.0" styleClass="dashboard-item">
+               <children>
+                  <Text layoutX="23.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblStudents" layoutX="41.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="291.0" layoutY="116.0" prefHeight="100.0" prefWidth="100.0" styleClass="dashboard-item">
+               <children>
+                  <Text layoutX="23.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buildings" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblBuildings" layoutX="41.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="418.0" layoutY="116.0" prefHeight="100.0" prefWidth="100.0" styleClass="dashboard-item">
+               <children>
+                  <Text layoutX="23.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exams" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lblExams" layoutX="41.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
