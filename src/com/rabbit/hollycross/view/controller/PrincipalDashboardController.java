@@ -37,7 +37,7 @@ public class PrincipalDashboardController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-        loadPrincipalOverviewScree();
+        loadPrincipalOverviewScreen();
 
         // Have to change
         lblTeachers.setText("225");
@@ -46,7 +46,7 @@ public class PrincipalDashboardController implements Initializable {
         lblExams.setText("0");
     }
 
-    private void loadPrincipalOverviewScree(){
+    private void loadPrincipalOverviewScreen(){
         try {
             AnchorPane anchorPane = FXMLLoader
                     .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/PrincipalOverviewScreen.fxml"));
@@ -86,7 +86,7 @@ public class PrincipalDashboardController implements Initializable {
         try {
             AnchorPane homePane = FXMLLoader
                     .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/PrincipalOverviewScreen.fxml"));
-            rootPrincipalDashboard.getChildren().setAll(homePane);
+            rootPane.getChildren().setAll(homePane);
         } catch (IOException e) {
             e.printStackTrace();
         }
