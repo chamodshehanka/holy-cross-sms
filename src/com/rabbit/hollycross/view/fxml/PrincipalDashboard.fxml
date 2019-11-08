@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane fx:id="rootPricipalDashboard" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController">
+<AnchorPane fx:id="rootPrincipalDashboard" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
          <children>

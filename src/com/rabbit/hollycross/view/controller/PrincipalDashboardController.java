@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 public class PrincipalDashboardController implements Initializable {
 
     @FXML
-    private AnchorPane rootPricipalDashboard;
+    private AnchorPane rootPrincipalDashboard;
 
     @FXML
     private AnchorPane rootPane;
@@ -46,7 +46,7 @@ public class PrincipalDashboardController implements Initializable {
             loginPane = FXMLLoader.load(getClass().getResource(
                     "/com/rabbit/hollycross/view/fxml/LoginScreen.fxml"
             ));
-            rootPricipalDashboard.getChildren().setAll(loginPane);
+            rootPrincipalDashboard.getChildren().setAll(loginPane);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -69,7 +69,7 @@ public class PrincipalDashboardController implements Initializable {
         try {
             AnchorPane homePane = FXMLLoader
                     .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/PrincipalDashboard.fxml"));
-            rootPricipalDashboard.getChildren().setAll(homePane);
+            rootPrincipalDashboard.getChildren().setAll(homePane);
         } catch (IOException e) {
             e.printStackTrace();
         }
