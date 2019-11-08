@@ -20,6 +20,14 @@
     -fx-font-weight: bold;
 }
 
+.btn-delete {
+    -fx-background-color: #e84118;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Calibri;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+}
+
 .text-field {
     -fx-text-fill: #ffffff;
     -fx-focus-color: #833471;

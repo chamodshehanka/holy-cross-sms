@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane fx:id="rootManageTeachers" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageTeachersScreenController">
    <children>
@@ -12,5 +14,91 @@
             <Font name="Calibri Bold" size="24.0" />
          </font>
       </Text>
+      <JFXTextField fx:id="txtTeacherID" focusColor="WHITE" labelFloat="true" layoutX="63.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Teacher ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="337.0" onAction="#addTeacher" styleClass="btn-secondary" text="Add New Teacher">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="372.0" layoutY="337.0" onAction="#allocateRelieves" styleClass="btn-secondary" text="Allocate Relieves">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="209.0" layoutY="337.0" onAction="#deleteTeacher" styleClass="btn-delete" text="Delete a Teacher">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="387.0" onAction="#searchTeacher" prefHeight="33.0" prefWidth="149.0" styleClass="btn-secondary" text="Search a Teacher">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtTeacherName" focusColor="WHITE" labelFloat="true" layoutX="185.0" layoutY="95.0" prefHeight="27.0" prefWidth="149.0" promptText="Name" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherNIC" focusColor="WHITE" labelFloat="true" layoutX="363.0" layoutY="95.0" prefHeight="27.0" prefWidth="128.0" promptText="NIC" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtAppointedDate" defaultColor="#1a0c12" layoutX="63.0" layoutY="143.0" prefHeight="28.0" prefWidth="122.0" promptText="Appointed Date" />
+      <JFXTextField fx:id="txtTeacherQualification" focusColor="WHITE" labelFloat="true" layoutX="187.0" layoutY="142.0" prefHeight="27.0" prefWidth="128.0" promptText="Qualifications" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherExeperience" focusColor="WHITE" labelFloat="true" layoutX="365.0" layoutY="142.0" prefHeight="27.0" prefWidth="128.0" promptText="Exeperience" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherSectionID" focusColor="WHITE" labelFloat="true" layoutX="60.0" layoutY="188.0" prefHeight="27.0" prefWidth="108.0" promptText="Section ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherClassRoomID" focusColor="WHITE" labelFloat="true" layoutX="186.0" layoutY="188.0" prefHeight="27.0" prefWidth="108.0" promptText="Class Room ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherECAID" focusColor="WHITE" labelFloat="true" layoutX="308.0" layoutY="188.0" prefHeight="27.0" prefWidth="89.0" promptText="ECA ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherIDCCAID" focusColor="WHITE" labelFloat="true" layoutX="409.0" layoutY="188.0" prefHeight="27.0" prefWidth="89.0" promptText="CCA ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherAttendanceID" focusColor="WHITE" labelFloat="true" layoutX="61.0" layoutY="226.0" prefHeight="27.0" prefWidth="108.0" promptText="Attendance ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherReliefID" focusColor="WHITE" labelFloat="true" layoutX="183.0" layoutY="226.0" prefHeight="27.0" prefWidth="108.0" promptText="Relief ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTeacherHallID" focusColor="WHITE" labelFloat="true" layoutX="308.0" layoutY="226.0" prefHeight="27.0" prefWidth="108.0" promptText="Hall ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="208.0" layoutY="387.0" onAction="#updateTeacher" prefHeight="33.0" prefWidth="149.0" styleClass="btn-secondary" text="Update Teacher">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
