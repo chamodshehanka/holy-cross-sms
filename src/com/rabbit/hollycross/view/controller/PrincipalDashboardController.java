@@ -94,7 +94,13 @@ public class PrincipalDashboardController implements Initializable {
 
     @FXML
     private void viewStudents() {
-
+        try {
+            AnchorPane studentPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageStudentScreen.fxml"));
+            rootPane.getChildren().setAll(studentPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
