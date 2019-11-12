@@ -46,7 +46,7 @@ public class PrincipalDashboardController implements Initializable {
         lblExams.setText("0");
     }
 
-    private void loadPrincipalOverviewScreen(){
+    private void loadPrincipalOverviewScreen() {
         try {
             AnchorPane anchorPane = FXMLLoader
                     .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/PrincipalOverviewScreen.fxml"));
@@ -120,6 +120,17 @@ public class PrincipalDashboardController implements Initializable {
             AnchorPane teachersPane = FXMLLoader
                     .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageTeachersScreen.fxml"));
             rootPane.getChildren().setAll(teachersPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void viewUsers() {
+        try {
+            AnchorPane usersPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageUsersScreen.fxml"));
+            rootPane.getChildren().setAll(usersPane);
         } catch (IOException e) {
             e.printStackTrace();
         }

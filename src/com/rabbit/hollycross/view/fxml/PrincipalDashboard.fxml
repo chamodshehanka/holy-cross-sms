@@ -7,12 +7,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="rootPrincipalDashboard" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.PrincipalDashboardController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
          <children>
-            <ImageView fitHeight="52.0" fitWidth="42.0" layoutX="92.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="74.0" fitWidth="65.0" layoutX="92.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/logo.jpg" />
                </image>
@@ -42,7 +41,12 @@
                   <Font name="Calibri Bold" size="15.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="414.0" onAction="#logOut" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #ee5253;" text="LOG OUT" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="468.0" onAction="#logOut" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #ee5253;" text="LOG OUT" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="38.0" layoutY="413.0" onAction="#viewUsers" prefHeight="37.0" prefWidth="168.0" style="-fx-background-color: #833471;" text="MANAGE USERS" textFill="WHITE">
                <font>
                   <Font name="Calibri Bold" size="15.0" />
                </font>

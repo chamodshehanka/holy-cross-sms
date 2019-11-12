@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rabbit.hollycross.view.controller.ManageExamsScreenController"
+            fx:controller="com.rabbit.hollycross.view.controller.ManageUsersScreenController"
             prefHeight="600.0" prefWidth="550.0">
 
 </AnchorPane>

@@ -1,3 +1,7 @@
+.root {
+    -fx-background-color: #833471;
+}
+
 .btn-primary{
     -fx-background-color: #833471;
 }
