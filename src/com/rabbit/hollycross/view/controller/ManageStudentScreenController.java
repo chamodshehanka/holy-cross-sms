@@ -4,9 +4,11 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -98,7 +100,13 @@ public class ManageStudentScreenController implements Initializable {
 
     @FXML
     void viewAllStudents(ActionEvent event) {
-
+        try {
+            AnchorPane allStudentsPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ViewAllStudentsScreen.fxml"));
+            rootManageStudent.getChildren().setAll(allStudentsPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

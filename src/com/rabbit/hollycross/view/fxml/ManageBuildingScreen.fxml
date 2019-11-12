@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
 <AnchorPane prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageBuildingScreenController">
-
+   <children>
+      <Text fill="WHITE" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Buildings">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtHallID" focusColor="WHITE" labelFloat="true" layoutX="83.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Hall ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="59.0" layoutY="143.0" styleClass="btn-secondary" text="Add Hall">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="408.0" layoutY="141.0" styleClass="btn-delete" text="Delete Hall">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtHallName" focusColor="WHITE" labelFloat="true" layoutX="192.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Hall Name" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtHallInchargeName" focusColor="WHITE" labelFloat="true" layoutX="300.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Incharge Name" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="141.0" styleClass="btn-secondary" text="Search Hall">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="282.0" layoutY="141.0" styleClass="btn-secondary" text="Update Hall">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="31.0" layoutY="217.0" prefHeight="346.0" prefWidth="486.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Hall ID" />
+          <TableColumn prefWidth="87.0" text="Hall Name" />
+            <TableColumn prefWidth="262.0" text="Incharge Name" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

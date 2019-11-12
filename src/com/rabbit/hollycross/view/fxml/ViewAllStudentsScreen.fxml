@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="550.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ViewAllStudentsScreenController">
+   <children>
+      <Text fill="WHITE" layoutX="222.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Students">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Text>
+      <TableView layoutX="22.0" layoutY="100.0" prefHeight="471.0" prefWidth="496.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Student ID" />
+          <TableColumn prefWidth="131.0" text="Student Name" />
+            <TableColumn prefWidth="75.0" text="NIC" />
+            <TableColumn prefWidth="111.0" text="Admission Date" />
+            <TableColumn prefWidth="87.0" text="Class Room ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
