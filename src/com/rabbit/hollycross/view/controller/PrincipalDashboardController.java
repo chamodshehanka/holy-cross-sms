@@ -71,12 +71,25 @@ public class PrincipalDashboardController implements Initializable {
 
     @FXML
     private void viewBuildings() {
+        try {
+            AnchorPane buildingPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageBuildingScreen.fxml"));
+            rootPane.getChildren().setAll(buildingPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     private void viewExams() {
-
+        try {
+            AnchorPane examsPane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageExamsScreen.fxml"));
+            rootPane.getChildren().setAll(examsPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
