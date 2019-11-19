@@ -9,7 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="rootLogin" prefHeight="600.0" prefWidth="800.0" styleClass="btn-primary" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.LoginScreenController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
@@ -37,6 +36,16 @@
          </font>
       </JFXPasswordField>
       <JFXButton buttonType="RAISED" layoutX="517.0" layoutY="429.0" onAction="#loginAction" styleClass="btn-secondary" text="Login">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="329.0" layoutY="539.0" styleClass="btn-secondary" text="Account Settings">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="538.0" styleClass="btn-delete" text="Exit">
          <font>
             <Font size="15.0" />
          </font>

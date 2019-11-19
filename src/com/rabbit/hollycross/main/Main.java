@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/com/rabbit/hollycross/view/fxml/LoginScreen.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Holy Cross SMS");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
