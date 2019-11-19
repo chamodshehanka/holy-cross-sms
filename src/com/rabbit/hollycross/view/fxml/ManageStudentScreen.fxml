@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="rootManageStudent" prefHeight="600.0" prefWidth="550.0" styleClass="dark-background" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageStudentScreenController">
    <children>
       <Text fill="WHITE" layoutX="197.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Students">
@@ -30,7 +29,7 @@
             <Font name="Calibri Bold" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="txtStudentNIC" focusColor="WHITE" labelFloat="true" layoutX="289.0" layoutY="97.0" prefHeight="27.0" prefWidth="96.0" promptText="Student NIC" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+      <JFXTextField fx:id="txtStudentNIC" focusColor="WHITE" labelFloat="true" layoutX="289.0" layoutY="97.0" prefHeight="27.0" prefWidth="96.0" promptText="NIC" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
          <font>
             <Font name="Calibri Bold" size="14.0" />
          </font>
@@ -81,7 +80,7 @@
             <Font name="Arial Bold" size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="47.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent Details :">
+      <Text fill="WHITE" layoutX="47.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent/Guardian Details :">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>
