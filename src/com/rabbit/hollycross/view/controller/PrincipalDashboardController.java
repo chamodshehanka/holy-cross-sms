@@ -136,4 +136,9 @@ public class PrincipalDashboardController implements Initializable {
         }
     }
 
+    @FXML
+    private void viewMore() {
+
+    }
+
 }
