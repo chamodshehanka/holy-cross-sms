@@ -15,7 +15,6 @@ import java.util.ResourceBundle;
  **/
 public class ViewMoreScreenController implements Initializable {
 
-
     @FXML
     private AnchorPane rootViewMore;
 
@@ -48,18 +47,21 @@ public class ViewMoreScreenController implements Initializable {
 
     @FXML
     void viewClasses() {
+        AnchorPane pane = null;
 
-    }
+        try {
+            pane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ManageClassesScreen.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-    @FXML
-        // To remove
-    void viewGrades() {
+        rootViewMore.getChildren().setAll(pane);
     }
 
     @FXML
     void viewManageGrades() {
         AnchorPane pane = null;
-
 
         try {
             pane = FXMLLoader
@@ -77,8 +79,6 @@ public class ViewMoreScreenController implements Initializable {
     }
 
     @FXML
-    void viewSubjects() {
-
-    }
+    private void viewAttendance(){}
 
 }
