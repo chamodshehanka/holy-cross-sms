@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rabbit.hollycross.view.controller.ViewMoreScreenController"
-            prefHeight="600.0" prefWidth="550.0">
 
+<AnchorPane fx:id="rootViewMore" prefHeight="600.0" prefWidth="550.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ViewMoreScreenController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="98.0" onAction="#viewManageSubjects" styleClass="btn-secondary" text="Manage Subjects">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="98.0" onAction="#viewManageGrades" styleClass="btn-secondary" text="Manage Grades">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="360.0" layoutY="98.0" onAction="#viewClasses" styleClass="btn-secondary" text="Manage Classes">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="148.0" onAction="#viewSections" styleClass="btn-secondary" text="Manage Sections">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="148.0" onAction="#viewAchievement" prefHeight="33.0" prefWidth="135.0" styleClass="btn-secondary" text="Achievements">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="360.0" layoutY="148.0" onAction="#viewActivities" prefHeight="33.0" prefWidth="136.0" styleClass="btn-secondary" text="Activities">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="196.0" onAction="#viewSubjects" styleClass="btn-secondary" text="Manage Subjects">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="212.0" layoutY="196.0" onAction="#viewGrades" styleClass="btn-secondary" text="Manage Grades">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="360.0" layoutY="196.0" onAction="#viewClasses" styleClass="btn-secondary" text="Manage Classes">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
 </AnchorPane>

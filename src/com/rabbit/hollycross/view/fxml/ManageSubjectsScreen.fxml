@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="550.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rabbit.hollycross.view.controller.ManageSubjectsScreenController">
+   <children>
+      <Text fill="WHITE" layoutX="207.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Subjects">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtStudentID" focusColor="WHITE" labelFloat="true" layoutX="83.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Subject ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="253.0" styleClass="btn-secondary" text="Add Subject">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="300.0" styleClass="btn-delete" text="Delete Subject">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtStudentID1" focusColor="WHITE" labelFloat="true" layoutX="197.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Subject Name" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStudentID11" focusColor="WHITE" labelFloat="true" layoutX="300.0" layoutY="95.0" prefHeight="27.0" prefWidth="96.0" promptText="Exam ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStudentID111" focusColor="WHITE" labelFloat="true" layoutX="82.0" layoutY="134.0" prefHeight="27.0" prefWidth="96.0" promptText="Grade ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStudentID1111" focusColor="WHITE" labelFloat="true" layoutX="196.0" layoutY="134.0" prefHeight="27.0" prefWidth="96.0" promptText="Time Table ID" styleClass="text-field" stylesheets="@../css/styles.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="205.0" layoutY="253.0" styleClass="btn-secondary" text="Search Subject">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="344.0" layoutY="253.0" styleClass="btn-secondary" text="Update Subject">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
