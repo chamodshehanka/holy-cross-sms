@@ -138,7 +138,13 @@ public class PrincipalDashboardController implements Initializable {
 
     @FXML
     private void viewMore() {
-
+        try {
+            AnchorPane viewMorePane = FXMLLoader
+                    .load(getClass().getResource("/com/rabbit/hollycross/view/fxml/ViewMoreScreen.fxml"));
+            rootPane.getChildren().setAll(viewMorePane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
